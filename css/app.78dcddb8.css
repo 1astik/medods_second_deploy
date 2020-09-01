@@ -1,0 +1,129 @@
+.main {
+    text-align: center;
+    box-sizing: border-box
+}
+
+.main .main-body {
+    padding-top: 2rem;
+    margin: 0 auto;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between
+}
+
+@media (max-width: 800px) {
+    .main .main-body {
+        justify-content: center
+    }
+}
+
+.main > h1 {
+    font-size: 2.3rem
+}
+
+.main .settings {
+    min-width: 25%;
+    max-width: 50%;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start
+}
+
+@media (max-width: 800px) {
+    .main .settings {
+        font-size: .5rem;
+        margin-left: 2rem
+    }
+}
+
+.main .settings .lose > h3 {
+    margin-bottom: 0
+}
+
+.main .settings button {
+    width: 5em;
+    box-sizing: border-box;
+    font-size: 1.4em;
+    border-radius: 10px 10px 10px 10px;
+    background: #6dabe8;
+    border: none;
+    padding: .3em .6em
+}
+
+.main .settings button:hover {
+    cursor: pointer;
+    background: #5682b1
+}
+
+.main .settings .levels {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start
+}
+
+.main .settings .levels h2 {
+    margin-bottom: 0
+}
+
+.main .game {
+    display: flex;
+    box-sizing: border-box
+}
+
+.main .game .box {
+    width: 150px;
+    height: 150px;
+    opacity: 50%;
+    box-sizing: border-box
+}
+
+@media (max-width: 800px) {
+    .main .game .box {
+        width: 75px;
+        height: 75px
+    }
+}
+
+.main .game .box:hover {
+    cursor: pointer
+}
+
+.main .game .active {
+    opacity: 100%
+}
+
+.main .game .box-blue {
+    background-color: #00f
+}
+
+.main .game .box-blue:hover {
+    border-left: 3px solid #000;
+    border-top: 3px solid #000
+}
+
+.main .game .box-red {
+    background-color: red
+}
+
+.main .game .box-red:hover {
+    border-right: 3px solid #000;
+    border-top: 3px solid #000
+}
+
+.main .game .box-yellow {
+    background-color: #ff0
+}
+
+.main .game .box-yellow:hover {
+    border-left: 3px solid #000;
+    border-bottom: 3px solid #000
+}
+
+.main .game .box-green {
+    background-color: green
+}
+
+.main .game .box-green:hover {
+    border-right: 3px solid #000;
+    border-bottom: 3px solid #000
+}
